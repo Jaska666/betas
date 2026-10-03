@@ -8,6 +8,7 @@ command -v xscreensaver >/dev/null 2>&1 || {
 	echo "xscreensaver is not installed. Install it first, e.g.:" >&2
 	echo "  sudo apt install xscreensaver   # Debian/Ubuntu" >&2
 	echo "  sudo dnf install xscreensaver   # Fedora" >&2
+	echo "  sudo pacman -S xscreensaver     # Arch" >&2
 	exit 1
 }
 

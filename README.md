@@ -11,7 +11,14 @@ The logo is a slanted **MIDNIGHT** wordmark over a flat disc, laid out like the 
 
 ## Install and set as your screensaver (Linux / X11, xscreensaver)
 
-    sudo apt install xscreensaver libx11-dev build-essential   # or your distro's equivalent
+    git clone -b claude/elegant-mccarthy-iv2ib2 https://github.com/jaska666/betas.git
+    cd betas
+
+    # install xscreensaver, a C compiler and the X11 headers:
+    sudo pacman -S --needed xscreensaver base-devel libx11                 # Arch / Manjaro
+    sudo dnf install xscreensaver gcc make libX11-devel                    # Fedora
+    sudo apt install xscreensaver build-essential libx11-dev               # Debian / Ubuntu
+
     ./install.sh
 
 `install.sh` builds the hack, installs it next to the other xscreensaver hacks
